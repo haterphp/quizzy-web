@@ -1,0 +1,42 @@
+.btn {
+    @apply rounded-lg flex items-center justify-center gap-2;
+
+    /* Sizes */
+
+    &.btn_default {
+        @apply px-5 py-2 leading-[20px];
+    }
+
+    &.btn_large {
+        @apply px-7 py-3 leading-[24px];
+    }
+
+
+    /* Variants */
+
+    &.btn_filled {
+        @apply text-white bg-button-default hover:bg-button-hover active:bg-button-active;
+    }
+
+    &.btn_outlined {
+        @apply border text-button-default border-button-default hover:text-button-hover active:text-button-active hover:border-button-hover hover:bg-button-hover/10 active:border-button-active active:bg-button-active/10
+    }
+
+    /* With icons */
+
+    &.btn_icon.btn_default {
+        @apply !p-2;
+
+        & > ui-icon {
+            @apply h-[20px];
+        }
+    }
+
+    &.btn_icon.btn_large {
+        @apply !p-3;
+
+        & > ui-icon {
+            @apply h-[24px];
+        }
+    }
+}
