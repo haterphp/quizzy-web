@@ -8,11 +8,11 @@
         <img src="/assets/logo.svg" alt="logo">
       </header>
 
-      <main class="pt-20 pb-10 grid grid-cols-1 lg:grid-cols-2 gap-x-10">
+      <main class="pt-20 pb-10 grid grid-cols-1 lg:grid-cols-2 gap-x-[105px]">
         <ng-content select="[content]" />
 
-        <div class="hidden lg:block">
-            <img src="/assets/pictures/auth-layout-picture.svg" alt="picture">
+        <div class="hidden lg:flex items-center justify-center">
+            <img src="/assets/pictures/auth-layout-picture.svg" class="w-2/3" alt="picture">
         </div>
       </main>
     </div>
