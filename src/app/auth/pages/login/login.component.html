@@ -1,11 +1,13 @@
 <auth-layout>
-  <div class="w-full" content>
+  <form [formGroup]="form" (submit)="handleOnSubmit($event)" class="w-full" content>
+
     <ui-form-field class="my-2">
-      <ui-label field-label>{{login}}</ui-label>
-      <input type="text" [(ngModel)]="login" class="p-2 border" >
+      <ui-label field-label>Логин</ui-label>
+      <input type="text" class="p-2 border" formControlName="login" />
     </ui-form-field>
-    <button ui-btn-filled size="large" class="w-full">
+
+    <button type="submit" ui-btn-filled size="large" class="w-full">
       Войти
     </button>
-  </div>
+  </form>
 </auth-layout>

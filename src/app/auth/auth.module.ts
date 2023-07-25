@@ -6,7 +6,7 @@ import { LoginPageComponent } from './pages/login/login.component';
 import { RouterPath } from '../common/router/paths.enum';
 import { LayoutComponent } from './common/layout/layout.component';
 import { UIModule } from '../common/ui/ui.module';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Route[] = [
   { path: RouterPath.LOGIN, component: LoginPageComponent }
@@ -16,7 +16,7 @@ const routes: Route[] = [
   declarations: [LayoutComponent, LoginPageComponent],
   imports: [
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     UIModule,
     RouterModule.forRoot(routes)
   ],
