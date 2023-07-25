@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginPageComponent {}
+export class LoginPageComponent {
+
+  public login: string
+
+}

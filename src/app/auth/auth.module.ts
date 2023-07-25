@@ -6,6 +6,7 @@ import { LoginPageComponent } from './pages/login/login.component';
 import { RouterPath } from '../common/router/paths.enum';
 import { LayoutComponent } from './common/layout/layout.component';
 import { UIModule } from '../common/ui/ui.module';
+import { FormsModule } from '@angular/forms';
 
 const routes: Route[] = [
   { path: RouterPath.LOGIN, component: LoginPageComponent }
@@ -13,7 +14,12 @@ const routes: Route[] = [
 
 @NgModule({
   declarations: [LayoutComponent, LoginPageComponent],
-  imports: [CommonModule, UIModule, RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    FormsModule,
+    UIModule,
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule],
 })
 export class AuthModule {}
