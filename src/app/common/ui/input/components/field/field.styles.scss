@@ -1,0 +1,5 @@
+:host(.focus) {
+  & ::ng-deep .field-label {
+    @apply text-sm;
+  }
+}
