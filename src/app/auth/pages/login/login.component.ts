@@ -9,12 +9,15 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class LoginPageComponent {
 
   public form = new FormGroup({
-    login: new FormControl('hello world'),
+    login: new FormControl('123'),
     password: new FormControl(''),
   });
 
   public handleOnSubmit(e: SubmitEvent): void {
     e.preventDefault()
+    this.form.setErrors({
+      login: 'Error'
+    })
     console.log(this.form.getRawValue())
   }
 }

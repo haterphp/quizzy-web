@@ -1,9 +1,9 @@
 <auth-layout>
   <form [formGroup]="form" (submit)="handleOnSubmit($event)" class="w-full" content>
 
-    <ui-form-field class="my-2">
+    <ui-form-field>
       <ui-label field-label>Логин</ui-label>
-      <input type="text" class="p-2 border" formControlName="login" />
+      <input type="text" ui-input formControlName="login" />
     </ui-form-field>
 
     <button type="submit" ui-btn-filled size="large" class="w-full">
